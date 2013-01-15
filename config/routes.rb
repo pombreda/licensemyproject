@@ -1,4 +1,16 @@
 Site::Application.routes.draw do
+  get "/about" => "home#about"
+
+  get "/faq" => "home#faq"
+
+  get "/licenses" => "home#licenses"
+
+  get "/support" => "home#support"
+
+  get "/add-license" => "home#add_license"
+
+  get "/" => "home#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

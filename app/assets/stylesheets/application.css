@@ -12,4 +12,5 @@
  *= require_tree .
  *= require twitter/bootstrap
  *= require bootswatch.css
+ *= require bootstrap-responsive.min.css
  */
