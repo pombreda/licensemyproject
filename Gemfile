@@ -11,15 +11,20 @@ gem 'pg'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'less-rails',   '~> 2.2.5'
+  gem 'coffee-rails', '~> 3.2.2'
+  gem 'less-rails-bootstrap'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :require => 'v8' #, :platforms => :ruby
+  gem 'libv8', '3.11.8.13'
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.3.0'
+
+  gem 'twitter-bootswatch-rails', '>= 2.2.2.0'
 end
 
+gem 'twitter-bootswatch-rails-helpers'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -36,4 +41,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'ghee'
 
